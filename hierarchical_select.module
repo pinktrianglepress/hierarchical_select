@@ -805,7 +805,6 @@ function form_hierarchical_select_process($element, &$form_state, $complete_form
   // is NOT erased, the corresponding value in $form_state['input'] will be
   // used instead of the default value that was set. This would result in
   // undesired behavior.
-  drupal_array_set_nested_value($form_state['input'], $element['#array_parents'], array());
 
   // Send the collected developer mode logs (by using #attached JS).
   $element = _hs_process_developer_mode_send_log_js($element, $hsid);
