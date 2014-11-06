@@ -15,6 +15,16 @@ define('HS_DEVELOPER_MODE', 0);
 // Drupal core hooks.
 
 /**
+ * Implements hook_admin_paths().
+ * See https://drupal.org/node/1671336#comment-6197346
+ */
+function hierarchical_select_admin_paths() {
+  return array(
+    'hierarchical_select_ajax/*' => TRUE
+  );
+}
+
+/**
  * Implements hook_menu().
  */
 function hierarchical_select_menu() {
